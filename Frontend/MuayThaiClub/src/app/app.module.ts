@@ -8,6 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './content/aboutus/aboutus.component';
 import { ContactComponent } from './content/contact/contact.component';
 import { HomeComponent } from './content/home/home.component';
+import { ProfileComponent } from './ProfileComponets/profile/profile.component';
+import { RegisterComponent } from './ProfileComponets/register/register.component';
+import { LoginComponent } from './ProfileComponets/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,16 @@ import { HomeComponent } from './content/home/home.component';
     FooterComponent,
     AboutusComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

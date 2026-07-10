@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProfileService } from '../Services/Profile/profile.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  constructor(public service : ProfileService)
+  {
+  }
 }
