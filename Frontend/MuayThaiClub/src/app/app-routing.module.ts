@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './content/home/home.component';
 import { ContactComponent } from './content/contact/contact.component';
 import { AboutusComponent } from './content/aboutus/aboutus.component';
-import { ProfileComponent } from './ProfileComponets/profile/profile.component';
-import { LoginComponent } from './ProfileComponets/login/login.component';
-import { RegisterComponent } from './ProfileComponets/register/register.component';
+import { ProfileComponent } from './content/profile_components/profile/profile.component';
+import { LoginComponent } from './content/profile_components/login/login.component';
+import { RegisterComponent } from './content/profile_components/register/register.component';
+
 
 const routes: Routes = [
   { path:'', redirectTo:'home', pathMatch: 'full'},

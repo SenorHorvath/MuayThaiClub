@@ -8,11 +8,12 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './content/aboutus/aboutus.component';
 import { ContactComponent } from './content/contact/contact.component';
 import { HomeComponent } from './content/home/home.component';
-import { ProfileComponent } from './ProfileComponets/profile/profile.component';
-import { RegisterComponent } from './ProfileComponets/register/register.component';
-import { LoginComponent } from './ProfileComponets/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { Profile } from './Model/Profile/profile';
+import { ProfileComponent } from './content/profile_components/profile/profile.component';
+import { LoginComponent } from './content/profile_components/login/login.component';
+import { RegisterComponent } from './content/profile_components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,8 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     HomeComponent,
     ProfileComponent,
-    RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
