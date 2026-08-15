@@ -1,0 +1,330 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj",
+        "projectName": "MuayThaiClub.Database",
+        "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj",
+        "packagesPath": "C:\\Users\\horva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\horva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj",
+        "projectName": "MuayThaiClub.EndPoint",
+        "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj",
+        "packagesPath": "C:\\Users\\horva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\horva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj"
+              },
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj"
+              },
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj",
+        "projectName": "MuayThaiClub.Logic",
+        "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj",
+        "packagesPath": "C:\\Users\\horva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\horva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\MuayThaiClub.Database.csproj"
+              },
+              "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj": {
+                "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj",
+        "projectName": "MuayThaiClub.Model",
+        "projectPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\MuayThaiClub.Model.csproj",
+        "packagesPath": "C:\\Users\\horva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\horva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

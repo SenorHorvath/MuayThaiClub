@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MuayThaiClub.Database\MuayThaiClub.Database.csproj" />
+    <ProjectReference Include="..\MuayThaiClub.Model\MuayThaiClub.Model.csproj" />
+  </ItemGroup>
+
+</Project>
