@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "MuayThaiClub.EndPoint",
-    "version": "1.0"
+    "title": "MuayThai API",
+    "version": "v1"
   },
   "paths": {
     "/User/Register": {
@@ -31,24 +31,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserRegisterResultDto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserRegisterResultDto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserRegisterResultDto"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -79,24 +62,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResultDto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResultDto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserLoginResultDto"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -120,15 +86,6 @@
             "maxLength": 255,
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserLoginResultDto": {
-        "type": "object",
-        "properties": {
-          "isSuccessful": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -158,11 +115,20 @@
           }
         },
         "additionalProperties": false
-      },
-      "UserRegisterResultDto": {
-        "type": "object",
-        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please enter a valid token",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

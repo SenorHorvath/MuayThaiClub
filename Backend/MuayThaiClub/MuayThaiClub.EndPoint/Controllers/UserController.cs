@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MuayThaiClub.Logic;
+using MuayThaiClub.Logic.Helpers.Exceptions;
 using MuayThaiClub.Model.Dtos.UserDto;
 
 namespace MuayThaiClub.EndPoint.Controllers
@@ -15,15 +16,16 @@ namespace MuayThaiClub.EndPoint.Controllers
     }
 
     [HttpPost("Register")]
-    public ActionResult<UserRegisterResultDto> Register(UserRegisterDto user)
+    public async Task Register(UserRegisterDto user)
     {
-      return logic.Register(user);
+      await logic.Register(user);
     }
 
     [HttpPost("Login")]
-    public ActionResult<UserLoginResultDto> Login(UserLoginDto user)
+    public async Task<IActionResult> Login(UserLoginDto user)
     {
-      return logic.Login(user);
+      var result = await logic.Login(user);
+      return Ok(result);
     }
   }
 }

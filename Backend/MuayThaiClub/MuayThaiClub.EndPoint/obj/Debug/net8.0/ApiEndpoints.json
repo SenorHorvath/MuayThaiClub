@@ -13,17 +13,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "MuayThaiClub.Model.Dtos.UserDto.UserLoginResultDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
@@ -41,12 +31,8 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MuayThaiClub.Model.Dtos.UserDto.UserRegisterResultDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
