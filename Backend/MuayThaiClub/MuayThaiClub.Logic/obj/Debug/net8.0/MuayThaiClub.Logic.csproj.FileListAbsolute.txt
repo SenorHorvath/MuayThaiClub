@@ -1,3 +1,9 @@
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.csproj.AssemblyReference.cache
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.AssemblyInfoInputs.cache
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.AssemblyInfo.cs
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.csproj.CoreCompileInputs.cache
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.sourcelink.json
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Logic.deps.json
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Logic.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Logic.pdb
@@ -5,12 +11,6 @@ C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Model.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Database.pdb
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\bin\Debug\net8.0\MuayThaiClub.Model.pdb
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.csproj.AssemblyReference.cache
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.AssemblyInfoInputs.cache
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.AssemblyInfo.cs
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.csproj.CoreCompileInputs.cache
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.sourcelink.json
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThai.89C07996.Up2Date
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\MuayThaiClub.Logic.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Logic\obj\Debug\net8.0\refint\MuayThaiClub.Logic.dll

@@ -13,5 +13,6 @@ namespace MuayThaiClub.Database.Helpers
 
     [StringLength(200)]
     public required string RefreshToken { get; set; } = "";
+    public string PhotoUrl { get; set; } = "";
   }
 }

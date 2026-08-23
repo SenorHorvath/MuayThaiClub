@@ -9,6 +9,7 @@ using MuayThaiClub.Database.Helpers;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.EndPoint.Helpers;
 using MuayThaiClub.Logic;
+using MuayThaiClub.Logic.Helpers;
 using System.Text;
 
 namespace MuayThaiClub.EndPoint
@@ -57,6 +58,10 @@ namespace MuayThaiClub.EndPoint
 
       builder.Services.AddTransient(typeof(Repository<>));
       builder.Services.AddTransient<UserLogic>();
+      builder.Services.AddTransient<DtoProvider>();
+      builder.Services.AddTransient<PostLogic>();
+      builder.Services.AddTransient<CommentLogic>();
+      builder.Services.AddTransient<IFileService, FileService>();
 
 
       builder.Services.AddIdentity<AppUser, IdentityRole>()
@@ -77,8 +82,8 @@ namespace MuayThaiClub.EndPoint
         {
           ValidateIssuer = true,
           ValidateAudience = true,
-          ValidAudience = "movieclub.com",
-          ValidIssuer = "movieclub.com",
+          ValidAudience = "muaythaiclub.com",
+          ValidIssuer = "muaythaiclub.com",
           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["jwt:key"] ?? throw new Exception("jwt:key not found in appsettings.json")))
           //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("NagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcs"))
         };

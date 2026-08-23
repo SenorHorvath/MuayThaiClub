@@ -4,8 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using MuayThaiClub.Database.Helpers;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers.Exceptions;
+using MuayThaiClub.Model.Dtos.User;
 using MuayThaiClub.Model.Dtos.UserDto;
-using MuayThaiClub.Model.Objects.User;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -18,13 +18,16 @@ namespace MuayThaiClub.Logic
     private UserManager<AppUser> userManager;
     private RoleManager<IdentityRole> roleManager;
     private readonly IConfiguration configuration;
+    private readonly IFileService fileService;
 
-    public UserLogic(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager,
-      IConfiguration configuration)
+    public UserLogic(UserManager<AppUser> userManager,
+      RoleManager<IdentityRole> roleManager,IConfiguration configuration,
+      IFileService fileService)
     {
       this.userManager = userManager;
       this.roleManager = roleManager;
       this.configuration = configuration;
+      this.fileService = fileService;
     }
 
     public async Task<UserLoginResultDto> Login(UserLoginDto UserLogin)
@@ -84,13 +87,42 @@ namespace MuayThaiClub.Logic
         RefreshToken = ""
       };
 
-      await userManager.CreateAsync(NewUser, user.Password);
+      var success = await userManager.CreateAsync(NewUser, user.Password);
+
+      if (!success.Succeeded)
+        throw new RegisterException("Something went wrong during registration.");
+
 
       if (userManager.Users.Count() == 1)
       {
         await roleManager.CreateAsync(new IdentityRole("Admin"));
         await userManager.AddToRoleAsync(NewUser, "Admin");
       }
+    }
+
+    public async Task ChangeProfilePicture(UserFileUploadDto file, string UserID)
+    {
+      var AllowedExtensions = new string[] { ".jpg", ".jpeg", ".png" };
+
+      if (!AllowedExtensions.Contains(file.Extension))
+      {
+        
+        throw new ArgumentException("Invalid file extension" + file.Extension);
+      }
+
+      string FileName = Guid.NewGuid().ToString() + file.Extension;
+      var User = await userManager.FindByIdAsync(UserID);
+
+      await fileService.SaveFileAsync(file.Content, FileName);
+
+      if (!string.IsNullOrEmpty(User.PhotoUrl)) 
+      {
+        fileService.DeleteFile(User.PhotoUrl);
+      }
+
+      User.PhotoUrl = FileName;
+      await userManager.UpdateAsync(User);
+
     }
 
     private JwtSecurityToken GenerateAccessToken(IEnumerable<Claim>? claims, int expiryInMinutes)

@@ -23,14 +23,14 @@ namespace MuayThaiClub.Database.Repositories
       ctx.SaveChanges();
     }
 
-    public async void CreateAsync(T entity)
+    public async Task CreateAsync(T entity)
     {
 
       ctx.Set<T>().Add(entity);
       await ctx.SaveChangesAsync();
     }
 
-    public async void UpdateAsync(T entity)
+    public async Task UpdateAsync(T entity)
     {
       var old = GetByID(entity.ID);
       foreach (var prop in typeof(T).GetProperties())
@@ -58,15 +58,23 @@ namespace MuayThaiClub.Database.Repositories
       ctx.SaveChanges();
     }
 
-    public async void DeleteAsync(T entity)
+    public async Task DeleteAsync(T entity)
     {
       ctx.Set<T>().Remove(entity);
       await ctx.SaveChangesAsync();
     }
 
-    public T GetByID(int id)
+    public T GetByID(string id)
     {
+      try
+      {
+
       return GetAll().First(t => t.ID == id);
+      }
+      catch (Exception sqlEx)
+      {
+        throw new Exception("A hiba: " + sqlEx.Message);
+      }
     }
 
     public IEnumerable<T> GetAll() 
@@ -74,16 +82,16 @@ namespace MuayThaiClub.Database.Repositories
       return ctx.Set<T>();
     }
 
-    public void DeleteByID(int id) 
+    public void DeleteByID(string id) 
     {
       var entity = GetByID(id);
       Delete(entity);
     }
 
-    public async void DeleteByIDAsync(int id)
+    public async Task DeleteByIDAsync(string id)
     {
       var entity = GetByID(id);
-      DeleteAsync(entity);
+      await DeleteAsync(entity);
     }
   }
 }

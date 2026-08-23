@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MuayThaiClub.Database\MuayThaiClub.Database.csproj" />
     <ProjectReference Include="..\MuayThaiClub.Model\MuayThaiClub.Model.csproj" />
   </ItemGroup>

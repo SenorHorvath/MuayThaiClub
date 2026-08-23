@@ -8,6 +8,6 @@ namespace MuayThaiClub.Model
 {
   public interface IIDentity
   {
-    public int ID { get; set; }
+    public string ID { get; set; }
   }
 }

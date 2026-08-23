@@ -1,4 +1,5 @@
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Database.deps.json
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Database.runtimeconfig.json
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Database.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Database.pdb
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Model.dll
@@ -13,6 +14,5 @@ C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\MuayThaiClub.Database.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\refint\MuayThaiClub.Database.dll
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\MuayThaiClub.Database.pdb
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\ref\MuayThaiClub.Database.dll
-C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\bin\Debug\net8.0\MuayThaiClub.Database.runtimeconfig.json
 C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\MuayThaiClub.Database.genruntimeconfig.cache
+C:\Users\horva\Documents\Programozas\projektek\MuayThaiClub\Backend\MuayThaiClub\MuayThaiClub.Database\obj\Debug\net8.0\ref\MuayThaiClub.Database.dll
