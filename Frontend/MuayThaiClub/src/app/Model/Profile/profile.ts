@@ -1,10 +1,7 @@
 export class Profile {
 
+    id : string = ''
     email : string = ''
-    password : string = ''
-
-    firstName : string = ''
-    lastName : string = ''
-
-    birthOfDate : Date = new Date()
+    username : string = ''
+    photoUrl : string = ''
 }
