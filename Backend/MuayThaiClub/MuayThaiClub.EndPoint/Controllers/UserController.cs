@@ -61,9 +61,19 @@ namespace MuayThaiClub.EndPoint.Controllers
       };
 
       var UserID = User.FindFirstValue(ClaimTypes.NameIdentifier);
-      
+
       await logic.ChangeProfilePicture(dto, UserID!);
       return Ok();
     }
+    [Authorize]
+    [HttpGet("me")]
+    public IActionResult GetCurrentUser() 
+    {
+      return Ok(new GetCurrentUserDto{
+        Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value,
+        UserName = User.Identity?.Name
+      });
+    }
+
   }
 }

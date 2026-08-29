@@ -76,6 +76,15 @@ namespace MuayThaiClub.EndPoint
         option.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
       }).AddJwtBearer(options =>
       {
+        options.Events = new JwtBearerEvents
+        {
+          OnMessageReceived = context =>
+          {
+            context.Token = context.Request.Cookies["access_token"];
+
+            return Task.CompletedTask;
+          }
+        };
         options.SaveToken = true;
         options.RequireHttpsMetadata = true;
         options.TokenValidationParameters = new TokenValidationParameters()
@@ -85,7 +94,6 @@ namespace MuayThaiClub.EndPoint
           ValidAudience = "muaythaiclub.com",
           ValidIssuer = "muaythaiclub.com",
           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["jwt:key"] ?? throw new Exception("jwt:key not found in appsettings.json")))
-          //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("NagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcsNagyonhosszútitkosítókulcs"))
         };
       });
 
