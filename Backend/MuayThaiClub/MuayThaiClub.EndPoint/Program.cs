@@ -96,6 +96,13 @@ namespace MuayThaiClub.EndPoint
         .UseLazyLoadingProxies();
       });
 
+      builder.Services.AddCors(opt => opt.AddPolicy("AllowClient", policy => 
+      {
+        policy.WithOrigins("http://localhost:4200")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+      }));
+
       var app = builder.Build();
 
       // Configure the HTTP request pipeline.
@@ -106,6 +113,7 @@ namespace MuayThaiClub.EndPoint
       }
 
 
+      app.UseCors("AllowClient");
 
       app.UseHttpsRedirection();
 

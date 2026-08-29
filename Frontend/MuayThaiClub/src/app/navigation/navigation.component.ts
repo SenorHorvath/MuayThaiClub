@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfileService } from '../Services/Profile/profile.service';
+import { AuthService } from '../Services/auth.service';
 
 @Component({
   selector: 'app-navigation',
@@ -8,7 +8,7 @@ import { ProfileService } from '../Services/Profile/profile.service';
 })
 export class NavigationComponent {
 
-  constructor(public service : ProfileService)
+  constructor(public service : AuthService)
   {
   }
 }

@@ -84,6 +84,7 @@ namespace MuayThaiClub.Logic
       {
         UserName = user.UserName,
         Email = user.EmailAddress,
+        DateOfBirth = user.DateOfBirth,
         RefreshToken = ""
       };
 

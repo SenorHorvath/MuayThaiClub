@@ -1,1 +1,13 @@
-<p>register works!</p>
+<div id="content">
+    <form>
+        <label>Email address</label><br>
+        <input [(ngModel)]="RegisterDto.emailAddress" name="email"><br>
+        <label>Username</label><br>
+        <input [(ngModel)]="RegisterDto.userName" name="name"><br>
+        <label>Password</label><br>
+        <input type="password" [(ngModel)]="RegisterDto.password" name="password"><br>
+        <label>Date of birth</label><br>
+        <input type="date" [(ngModel)]="RegisterDto.dateOfBirth" name="date-of-birth"><br>
+        <button (click)="Register()">Register</button>
+    </form>
+</div>

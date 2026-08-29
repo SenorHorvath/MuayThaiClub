@@ -1,9 +1,9 @@
 <div id="content">
     <form>
         <label>Email address</label><br>
-        <input type="email" placeholder="johndoe@example.com"><br>
+        <input type="email" placeholder="johndoe@example.com" [(ngModel)]="loginDto.emailAddress" name="email"><br>
         <label>Password</label><br>
-        <input type="password" placeholder="Password"><br>
-        <button>Login</button>
+        <input type="password" placeholder="Password" [(ngModel)]="loginDto.password" name="password"><br>
+        <button (click)="login()">Login</button>
     </form>
 </div>

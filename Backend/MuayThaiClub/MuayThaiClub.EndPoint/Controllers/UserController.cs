@@ -24,6 +24,7 @@ namespace MuayThaiClub.EndPoint.Controllers
     [HttpPost("Register")]
     public async Task Register(UserRegisterDto user)
     {
+      Console.WriteLine(user.DateOfBirth);
       await logic.Register(user);
     }
 

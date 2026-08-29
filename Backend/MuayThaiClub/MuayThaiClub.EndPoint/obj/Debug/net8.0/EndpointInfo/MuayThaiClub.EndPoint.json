@@ -420,6 +420,7 @@
       },
       "UserRegisterDto": {
         "required": [
+          "dateOfBirth",
           "emailAddress",
           "password",
           "userName"
@@ -440,6 +441,10 @@
             "maxLength": 255,
             "type": "string",
             "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

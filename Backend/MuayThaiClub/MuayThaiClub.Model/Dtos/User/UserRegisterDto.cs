@@ -18,6 +18,6 @@ namespace MuayThaiClub.Model.Dtos.UserDto
     [MaxLength(255)]
     public required string Password { get; set; } = "";
 
-    public required DateTime DateOfBirth = new DateTime();
+    public required DateTime DateOfBirth { get; set; } = new DateTime();
   }
 }

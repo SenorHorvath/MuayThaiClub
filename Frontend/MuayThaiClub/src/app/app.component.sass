@@ -22,3 +22,19 @@ button
     &:active
         position: relative
         top: 1px
+
+.parent
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    grid-column-gap: 0px
+    grid-row-gap: 0px
+    margin-left: 10%
+
+
+.div1
+    grid-area: 1 / 2 / 2 / 5
+.div2
+    grid-area: 2 / 2 / 5 / 5
+.div3
+    grid-area: 5 / 2 / 6 / 5
