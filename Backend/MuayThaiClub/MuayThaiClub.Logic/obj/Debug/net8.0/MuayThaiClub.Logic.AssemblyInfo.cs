@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuayThaiClub.Logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fb5df325f888842fee86810ed009feae53e3fc5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+886df7dee0561c2c8b9b1aecacaa76a8f1784507")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuayThaiClub.Logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuayThaiClub.Logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -32,7 +32,15 @@ namespace MuayThaiClub.EndPoint.Controllers
     public async Task<IActionResult> Login(UserLoginDto user)
     {
       var result = await logic.Login(user);
-      return Ok(result);
+      Response.Cookies.Append("access_token", result.AccessToken, new CookieOptions
+      {
+        HttpOnly = true,
+        Secure = true,
+        SameSite = SameSiteMode.None,
+        Expires = result.AccessTokenExpiration
+      });
+
+      return Ok();
     }
     [HttpPost("ChangeProfilePicture")]
     [Consumes("multipart/form-data")]
