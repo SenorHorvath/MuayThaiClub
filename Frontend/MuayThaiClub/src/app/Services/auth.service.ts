@@ -2,13 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { UserRegisterDto } from '../Model/User/user-register-dto';
 import { UserLoginDto } from '../Model/User/user-login-dto';
+import { GetCurrentUserDto } from '../Model/User/get-current-user-dto';
+import { environment } from '../Environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private apiUrl : string = 'https://localhost:7298/User/'
+  private apiUrl : string = environment.apiUrl + '/User/'
   constructor(private http : HttpClient) { }
 
   register(dto : UserRegisterDto)
@@ -22,14 +24,10 @@ export class AuthService {
 
   }
 
-  getToken() : string | null
+  getCurrentUser()
   {
-    return null
-  }
-
-  logout()
-  {
-    
+    return this.http.get<GetCurrentUserDto>(this.apiUrl + "me", 
+      { withCredentials: true })
   }
 
   

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { PostCreateUpdateDto } from '../../Model/Post/post-create-update-dto';
+import { PostViewDto } from '../../Model/Post/post-view-dto';
+import { PostService } from '../../Services/post.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +9,22 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.sass'
 })
 export class HomeComponent {
+
+  newPost : PostCreateUpdateDto
+  posts : PostViewDto[] = []
+
+constructor(private service : PostService) {
+  this.newPost = new PostCreateUpdateDto()
+}
+
+createPost() : void
+{
+  this.service.createPost(this.newPost)
+}
+
+getAll() : PostViewDto[]
+{
+  return this.service.getAll()
+}
 
 }

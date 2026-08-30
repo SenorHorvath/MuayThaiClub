@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div id="content">
+    <div id="new-post-div">
+        <input type="text" name="title" [(ngModel)]="newPost.title">
+        <textarea placeholder="What's on your mind?" id="new-post" [(ngModel)]="newPost.description"></textarea><br>
+        <button (click)="createPost()">Post</button>
+    </div>
+</div>
