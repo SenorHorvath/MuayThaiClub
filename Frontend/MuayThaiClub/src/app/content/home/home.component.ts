@@ -17,9 +17,12 @@ constructor(private service : PostService) {
   this.newPost = new PostCreateUpdateDto()
 }
 
-createPost() : void
+createPost()
 {
-  this.service.createPost(this.newPost)
+  return this.service.createPost(this.newPost).subscribe({
+    next: response => console.log(response),
+    error: error => console.log(error)
+  })
 }
 
 getAll() : PostViewDto[]

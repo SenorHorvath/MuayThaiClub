@@ -108,7 +108,8 @@ namespace MuayThaiClub.EndPoint
       {
         policy.WithOrigins("http://localhost:4200")
         .AllowAnyHeader()
-        .AllowAnyMethod();
+        .AllowAnyMethod()
+        .AllowCredentials();
       }));
 
       var app = builder.Build();
@@ -125,6 +126,7 @@ namespace MuayThaiClub.EndPoint
 
       app.UseHttpsRedirection();
 
+      app.UseAuthentication();
       app.UseAuthorization();
 
 

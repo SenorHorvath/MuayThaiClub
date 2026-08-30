@@ -20,7 +20,7 @@ export class AuthService {
 
   login(dto : UserLoginDto)
   {
-    return this.http.post(this.apiUrl + "Login", dto)
+    return this.http.post(this.apiUrl + "Login", dto, {withCredentials: true})
 
   }
 

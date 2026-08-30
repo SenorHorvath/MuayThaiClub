@@ -232,6 +232,16 @@
   },
   {
     "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "User/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
     "Method": "Register",
     "RelativePath": "User/Register",
     "HttpMethod": "POST",
