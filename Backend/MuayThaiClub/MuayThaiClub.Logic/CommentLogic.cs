@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using MuayThaiClub.Database.Helpers.Interfaces;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers;
 using MuayThaiClub.Logic.Helpers.BaseClasses;
@@ -17,7 +18,7 @@ namespace MuayThaiClub.Logic
 {
   public class CommentLogic : CrudBase<Comment, CommentCreateUpdateDto, CommentViewDto>, ICommentLogic
   {
-    public CommentLogic(Repository<Comment> repo, DtoProvider provider) : base(repo, provider)
+    public CommentLogic(IRepository<Comment> repo, DtoProvider provider) : base(repo, provider)
     {
     }
 

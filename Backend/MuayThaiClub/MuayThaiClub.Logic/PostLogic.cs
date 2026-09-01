@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MuayThaiClub.Database.Helpers.Interfaces;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers;
 using MuayThaiClub.Logic.Helpers.BaseClasses;
@@ -16,7 +17,7 @@ namespace MuayThaiClub.Logic
 {
   public class PostLogic : CrudBase<Post, PostCreateUpdateDto, PostViewDto>, IPostLogic
   {
-    public PostLogic(Repository<Post> repo, DtoProvider provider) : base(repo, provider)
+    public PostLogic(IRepository<Post> repo, DtoProvider provider) : base(repo, provider)
     {
             
     }

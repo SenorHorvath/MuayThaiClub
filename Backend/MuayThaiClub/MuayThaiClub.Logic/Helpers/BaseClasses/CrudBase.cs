@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MuayThaiClub.Database.Helpers.Interfaces;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Model;
 using MuayThaiClub.Model.Dtos.Post;
@@ -13,10 +14,10 @@ namespace MuayThaiClub.Logic.Helpers.BaseClasses
 {
   public abstract class CrudBase<T, TCreateUpdateDto, TViewDto> where T : class, IIDentity, ICreatorID
   {
-    protected Repository<T> repo;
+    protected IRepository<T> repo;
     protected Mapper mapper;
 
-    public CrudBase(Repository<T> repo, DtoProvider provider)
+    public CrudBase(IRepository<T> repo, DtoProvider provider)
     {
       this.repo = repo;
       this.mapper = provider.mapper;
