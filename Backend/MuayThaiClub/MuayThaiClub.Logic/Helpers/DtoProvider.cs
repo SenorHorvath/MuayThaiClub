@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MuayThaiClub.Model.Dtos.Comment;
 using MuayThaiClub.Model.Dtos.Post;
+using MuayThaiClub.Model.Dtos.User;
 using MuayThaiClub.Model.Objects;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace MuayThaiClub.Logic.Helpers
 
         cfg.CreateMap<CommentCreateUpdateDto, Comment>();
         cfg.CreateMap<Comment, CommentViewDto>();
+        cfg.CreateMap<User, UserViewDto>();
 
       }));
     }

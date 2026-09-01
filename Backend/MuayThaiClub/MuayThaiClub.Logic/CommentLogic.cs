@@ -22,10 +22,9 @@ namespace MuayThaiClub.Logic
     {
     }
 
-    public async Task<CommentViewDto> CreateAsync(CommentCreateUpdateDto e, string PostID, string UserID)
+    public async override Task<CommentViewDto> CreateAsync(CommentCreateUpdateDto e, string UserID)
     {
       var comment = mapper.Map<Comment>(e);
-      comment.PostID = PostID;
       comment.ParentCommentID = e.ParentCommentID == "" ? null : e.ParentCommentID;
       comment.CreatorID = UserID;
       await repo.CreateAsync(comment);
@@ -38,38 +37,6 @@ namespace MuayThaiClub.Logic
       return repo.GetAll().ToList().Select(x => mapper.Map<CommentViewDto>(x))
         .Where(c => c.ParentCommentID == null);
     }
-    //private Repository<Comment> repo;
-    //private Mapper mapper;
-
-    //public CommentLogic(Repository<Comment> repo, DtoProvider provider)
-    //{
-    //  this.repo = repo;
-    //  this.mapper = provider.mapper;
-    //}
-
-    //public Task CreateAsync(CommentCreateUpdateDto p, string UserID)
-    //{
-    //  throw new NotImplementedException();
-    //}
-
-    //public Task DeleteAsync(string id)
-    //{
-    //  throw new NotImplementedException();
-    //}
-
-    //public CommentViewDto Get(string id)
-    //{
-    //  throw new NotImplementedException();
-    //}
-
-    //public IEnumerable<CommentViewDto> GetAll()
-    //{
-    //  throw new NotImplementedException();
-    //}
-
-    //public Task UpdateAsync(string id, CommentCreateUpdateDto p, string UserID)
-    //{
-    //  throw new NotImplementedException();
-    //}
+    
   }
 }

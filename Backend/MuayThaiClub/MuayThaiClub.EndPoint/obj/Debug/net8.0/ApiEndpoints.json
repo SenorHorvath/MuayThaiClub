@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
-    "Method": "ChangeProfilePicture",
-    "RelativePath": "Auth/ChangeProfilePicture",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "File",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "Auth/Login",
     "HttpMethod": "POST",
@@ -248,6 +232,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
+    "Method": "ChangeProfilePicture",
+    "RelativePath": "User/ChangeProfilePicture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

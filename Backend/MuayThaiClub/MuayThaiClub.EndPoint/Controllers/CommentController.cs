@@ -42,7 +42,8 @@ namespace MuayThaiClub.EndPoint.Controllers
     public async Task<IActionResult> Create(CommentCreateUpdateDto comment, string PostID)
     {
       var user = await userManager.GetUserAsync(User);
-      var CreatedComment = await logic.CreateAsync(comment, PostID, user!.Id);
+      comment.PostID = PostID;
+      var CreatedComment = await logic.CreateAsync(comment, user!.Id);
       return Ok(CreatedComment);
     }
     [HttpPut]
