@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MuayThaiClub.Database.Helpers;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using MuayThaiClub.Model.Dtos.Comment;
 using MuayThaiClub.Model.Dtos.Post;
 using MuayThaiClub.Model.Objects;
@@ -14,10 +15,10 @@ namespace MuayThaiClub.EndPoint.Controllers
   [Route("[controller]")]
   public class CommentController : ControllerBase
   {
-    private CommentLogic logic;
+    private ICommentLogic logic;
     private UserManager<AppUser> userManager;
     private RoleManager<IdentityRole> rolemanager;
-    public CommentController(CommentLogic logic,
+    public CommentController(ICommentLogic logic,
       UserManager<AppUser> userManager, RoleManager<IdentityRole> rolemanager)
     {
       this.logic = logic;

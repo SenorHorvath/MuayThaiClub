@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MuayThaiClub.Database.Helpers;
 using MuayThaiClub.Logic;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using MuayThaiClub.Model.Dtos.Post;
 using MuayThaiClub.Model.Objects;
 
@@ -12,10 +13,10 @@ namespace MuayThaiClub.EndPoint.Controllers
   [Route("[controller]")]
   public class PostController : ControllerBase
   {
-    private PostLogic logic;
+    private IPostLogic logic;
     UserManager<AppUser> usermanager;
     RoleManager<IdentityRole> rolemanager;
-    public PostController(PostLogic logic, UserManager<AppUser> usermanager, RoleManager<IdentityRole> rolemanager)
+    public PostController(IPostLogic logic, UserManager<AppUser> usermanager, RoleManager<IdentityRole> rolemanager)
     {
       this.logic = logic;
       this.usermanager = usermanager;

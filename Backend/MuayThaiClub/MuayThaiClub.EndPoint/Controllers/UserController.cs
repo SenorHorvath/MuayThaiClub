@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MuayThaiClub.EndPoint.Helpers.Classes;
+using MuayThaiClub.Logic;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using MuayThaiClub.Model.Dtos.User;
 using System.Security.Claims;
 
@@ -10,7 +12,12 @@ namespace MuayThaiClub.EndPoint.Controllers
   [Route("[Controller]")]
   public class UserController : ControllerBase
   {
+    IUserLogic logic;
 
+    public UserController(IUserLogic logic)
+    {
+      this.logic = logic;
+    }
 
     [HttpPost("ChangeProfilePicture")]
     [Consumes("multipart/form-data")]
