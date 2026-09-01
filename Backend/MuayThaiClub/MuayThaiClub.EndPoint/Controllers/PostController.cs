@@ -29,17 +29,18 @@ namespace MuayThaiClub.EndPoint.Controllers
     }
 
     [HttpGet("GetAll")]
-    public async Task<IActionResult> GetAll()
+    public IActionResult GetAll()
     {
       return Ok(logic.GetAll());
     }
 
     [HttpPost]
     [Authorize]
-    public async Task Create(PostCreateUpdateDto post)
+    public async Task<IActionResult> Create(PostCreateUpdateDto post)
     {
       var user = await usermanager.GetUserAsync(User);
-      await logic.CreateAsync(post, user!.Id);
+      var CreatedPost = await logic.CreateAsync(post, user!.Id);
+      return Ok(CreatedPost);
     }
 
     [HttpPut("{id}")]

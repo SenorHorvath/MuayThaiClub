@@ -1,4 +1,7 @@
 @import ../../app.component
+
+$post-width: 30em
+
 #content
     margin-left: 11%
     margin-top: 2em
@@ -10,3 +13,17 @@
 
 button
     background-color: green
+
+.post
+    margin-top: 2em
+    border: 1px black solid
+    max-width: $post-width
+    padding: 0.5em
+
+.post > h3
+    text-align: center
+    max-width: $post-width
+
+.post > p
+    max-width: $post-width
+    line-break: anywhere

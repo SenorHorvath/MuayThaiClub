@@ -4,4 +4,10 @@
         <textarea placeholder="What's on your mind?" id="new-post" [(ngModel)]="newPost.description"></textarea><br>
         <button (click)="createPost()">Post</button>
     </div>
+    <div id="posts">
+        <div *ngFor="let item of posts" class="post">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
 </div>

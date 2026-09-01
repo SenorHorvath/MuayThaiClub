@@ -32,11 +32,12 @@ namespace MuayThaiClub.Logic.Helpers.BaseClasses
     {
       return repo.GetAll().Select(x => mapper.Map<TViewDto>(x));
     }
-    public async Task CreateAsync(TCreateUpdateDto e, string UserID)
+    public async Task<TViewDto> CreateAsync(TCreateUpdateDto e, string UserID)
     {
       var entity = mapper.Map<T>(e);
       entity.CreatorID = UserID;
       await repo.CreateAsync(entity);
+      return mapper.Map<TViewDto>(entity);
     }
     public async Task UpdateAsync(string id, TCreateUpdateDto e, string UserID)
     {
