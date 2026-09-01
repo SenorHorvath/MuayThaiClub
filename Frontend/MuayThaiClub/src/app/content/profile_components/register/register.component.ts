@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../../Services/auth.service';
-import { UserRegisterDto } from '../../../Model/User/user-register-dto';
+import { AuthRegisterDto } from '../../../Model/Auth/auth-register-dto';
 
 @Component({
   selector: 'app-register',
@@ -9,10 +9,10 @@ import { UserRegisterDto } from '../../../Model/User/user-register-dto';
 })
 export class RegisterComponent {
 
-  public RegisterDto : UserRegisterDto
+  public RegisterDto : AuthRegisterDto
   constructor(private service : AuthService) {
     this.service = service
-    this.RegisterDto = new UserRegisterDto()
+    this.RegisterDto = new AuthRegisterDto()
   }
 
    Register()

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './Services/auth.service';
-import { GetCurrentUserDto } from './Model/User/get-current-user-dto';
+import { GetCurrentAuthDto } from './Model/Auth/get-current-auth-dto';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +9,17 @@ import { GetCurrentUserDto } from './Model/User/get-current-user-dto';
 })
 export class AppComponent implements OnInit  {
   title = 'MuayThaiClub';
-  currentUser : GetCurrentUserDto
+  currentUser : GetCurrentAuthDto
   
   constructor(public service : AuthService)
   {
-    this.currentUser = new GetCurrentUserDto()
+    this.currentUser = new GetCurrentAuthDto()
   }
   ngOnInit(): void {
      this.service.getCurrentUser().subscribe(
       {
         next: user => this.currentUser = user,
-        error: () => new GetCurrentUserDto()
+        error: () => new GetCurrentAuthDto()
       }
     )
   }

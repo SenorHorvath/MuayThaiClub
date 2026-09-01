@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../../Services/auth.service';
-import { UserLoginDto } from '../../../Model/User/user-login-dto';
+import { AuthLoginDto } from '../../../Model/Auth/auth-login-dto';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  loginDto : UserLoginDto
+  loginDto : AuthLoginDto
 
   constructor(public service : AuthService, private router : Router) {
-    this.loginDto = new UserLoginDto()
+    this.loginDto = new AuthLoginDto()
   }
 
   login()

@@ -10,7 +10,7 @@ import { ContactComponent } from './content/contact/contact.component';
 import { HomeComponent } from './content/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { User } from './Model/User/user';
+import { Auth } from './Model/Auth/auth';
 import { ProfileComponent } from './content/profile_components/profile/profile.component';
 import { LoginComponent } from './content/profile_components/login/login.component';
 import { RegisterComponent } from './content/profile_components/register/register.component';
