@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers;
 using MuayThaiClub.Logic.Helpers.BaseClasses;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using MuayThaiClub.Model.Dtos.Comment;
 using MuayThaiClub.Model.Dtos.Post;
 using MuayThaiClub.Model.Objects;
@@ -14,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace MuayThaiClub.Logic
 {
-  public class CommentLogic : CrudBase<Comment, CommentCreateUpdateDto, CommentViewDto>
+  public class CommentLogic : CrudBase<Comment, CommentCreateUpdateDto, CommentViewDto>, ICommentLogic
   {
     public CommentLogic(Repository<Comment> repo, DtoProvider provider) : base(repo, provider)
     {

@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MuayThaiClub.Database;
 using MuayThaiClub.Database.Helpers;
+using MuayThaiClub.Database.Helpers.Interfaces;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.EndPoint.Helpers;
 using MuayThaiClub.Logic;

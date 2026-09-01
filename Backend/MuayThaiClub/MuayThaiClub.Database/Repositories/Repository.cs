@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MuayThaiClub.Database.Helpers.Interfaces;
 using MuayThaiClub.Model;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MuayThaiClub.Database.Repositories
 {
-  public class Repository<T> where T : class, IIDentity
+  public class Repository<T> : IRepository<T> where T : class, IIDentity
   {
     protected MuayThaiContext ctx;
 

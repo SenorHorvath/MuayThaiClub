@@ -49,20 +49,17 @@ namespace MuayThaiClub.Logic.Helpers.BaseClasses
         {
           try
           {
-            // <-- A HIBA ITT TÖRTÉNIK, amikor a Mapper hozzáér a proxyhoz!
             mapper.Map(e, ToUpdate);
             await repo.UpdateAsync(ToUpdate);
           }
           catch (Exception ex)
           {
-            // Ássunk le a legalsó, eredeti SQL hibáig!
             Exception realError = ex;
             while (realError.InnerException != null)
             {
               realError = realError.InnerException;
             }
 
-            // Dobunk egy új hibát, amit a Swagger egyből ki fog írni a képernyőre!
             throw new Exception(">>> PONTOS SQL HIBA: " + realError.Message);
           }
         }

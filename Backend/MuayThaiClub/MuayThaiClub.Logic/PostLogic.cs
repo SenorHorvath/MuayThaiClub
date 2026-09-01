@@ -2,6 +2,7 @@
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers;
 using MuayThaiClub.Logic.Helpers.BaseClasses;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using MuayThaiClub.Model.Dtos.Post;
 using MuayThaiClub.Model.Objects;
 using System;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace MuayThaiClub.Logic
 {
-  public class PostLogic : CrudBase<Post, PostCreateUpdateDto, PostViewDto>
+  public class PostLogic : CrudBase<Post, PostCreateUpdateDto, PostViewDto>, IPostLogic
   {
     public PostLogic(Repository<Post> repo, DtoProvider provider) : base(repo, provider)
     {
