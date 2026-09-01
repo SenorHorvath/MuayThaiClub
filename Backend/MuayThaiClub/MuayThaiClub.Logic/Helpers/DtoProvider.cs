@@ -24,6 +24,7 @@ namespace MuayThaiClub.Logic.Helpers
 
         cfg.CreateMap<CommentCreateUpdateDto, Comment>();
         cfg.CreateMap<Comment, CommentViewDto>();
+
       }));
     }
   }

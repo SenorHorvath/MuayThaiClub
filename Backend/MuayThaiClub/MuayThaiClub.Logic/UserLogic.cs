@@ -41,7 +41,7 @@ namespace MuayThaiClub.Logic
       }
 
       string FileName = Guid.NewGuid().ToString() + file.Extension;
-      var User = await userManager.FindByIdAsync(UserID);
+      var User = repo.GetByID(UserID);
 
       await fileService.SaveFileAsync(file.Content, FileName);
 
@@ -51,7 +51,7 @@ namespace MuayThaiClub.Logic
       }
 
       User.PhotoUrl = FileName;
-      await userManager.UpdateAsync(User);
+      await repo.UpdateAsync(User);
 
     }
 

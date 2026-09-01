@@ -11,6 +11,7 @@ using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.EndPoint.Helpers;
 using MuayThaiClub.Logic;
 using MuayThaiClub.Logic.Helpers;
+using MuayThaiClub.Logic.Helpers.Interfaces;
 using System.Text;
 
 namespace MuayThaiClub.EndPoint
@@ -57,11 +58,12 @@ namespace MuayThaiClub.EndPoint
     });
       });
 
-      builder.Services.AddTransient(typeof(Repository<>));
-      builder.Services.AddTransient<AuthLogic>();
+      builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+      builder.Services.AddTransient<IAuthLogic, AuthLogic>();
       builder.Services.AddTransient<DtoProvider>();
-      builder.Services.AddTransient<PostLogic>();
-      builder.Services.AddTransient<CommentLogic>();
+      builder.Services.AddTransient<IPostLogic, PostLogic>();
+      builder.Services.AddTransient<ICommentLogic, CommentLogic>();
+      builder.Services.AddTransient<IUserLogic, UserLogic>();
       builder.Services.AddTransient<IFileService, FileService>();
 
 

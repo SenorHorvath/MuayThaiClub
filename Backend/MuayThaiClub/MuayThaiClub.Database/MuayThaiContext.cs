@@ -8,6 +8,7 @@ namespace MuayThaiClub.Database
   public class MuayThaiContext : IdentityDbContext
   {
     public DbSet<AppUser> AppUsers { get; set; }
+    public DbSet<User> User { get; set; }
     public DbSet<Post> Posts { get; set; }
     public DbSet<Comment> Comments { get; set; }
     public MuayThaiContext(DbContextOptions options) : base(options)
@@ -34,6 +35,14 @@ namespace MuayThaiClub.Database
         .WithOne(p => p.ParentComment)
         .HasForeignKey(p => p.ParentCommentID)
         .OnDelete(DeleteBehavior.NoAction);
+
+      builder.Entity<User>().
+       HasOne<AppUser>()
+       .WithOne()
+       .HasForeignKey<User>(u => u.AppUserID)
+       .OnDelete(DeleteBehavior.Cascade);
+
+
       base.OnModelCreating(builder);
 
     }

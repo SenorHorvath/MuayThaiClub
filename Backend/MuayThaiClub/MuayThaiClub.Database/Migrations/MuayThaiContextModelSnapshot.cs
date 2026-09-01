@@ -292,16 +292,37 @@ namespace MuayThaiClub.Database.Migrations
                     b.ToTable("Posts");
                 });
 
+            modelBuilder.Entity("MuayThaiClub.Model.Objects.User", b =>
+                {
+                    b.Property<string>("AppUserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AppUserID");
+
+                    b.ToTable("User");
+                });
+
             modelBuilder.Entity("MuayThaiClub.Database.Helpers.AppUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("PhotoUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RefreshToken")
                         .IsRequired()
@@ -377,6 +398,15 @@ namespace MuayThaiClub.Database.Migrations
                     b.Navigation("ParentComment");
 
                     b.Navigation("Post");
+                });
+
+            modelBuilder.Entity("MuayThaiClub.Model.Objects.User", b =>
+                {
+                    b.HasOne("MuayThaiClub.Database.Helpers.AppUser", null)
+                        .WithOne()
+                        .HasForeignKey("MuayThaiClub.Model.Objects.User", "AppUserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MuayThaiClub.Model.Objects.Comment", b =>
