@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuayThaiClub.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ff8ac323ba85713744940204dc4a0b94aaffb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19f130a6e3a41c25b41680dc73c4af8c6b38d810")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuayThaiClub.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuayThaiClub.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

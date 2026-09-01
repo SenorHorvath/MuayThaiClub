@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using MuayThaiClub.Database.Repositories;
 using MuayThaiClub.Logic.Helpers;
 using MuayThaiClub.Logic.Helpers.BaseClasses;
@@ -19,13 +20,15 @@ namespace MuayThaiClub.Logic
     {
     }
 
-    public async Task CreateAsync(CommentCreateUpdateDto e, string PostID, string UserID)
+    public async Task<CommentViewDto> CreateAsync(CommentCreateUpdateDto e, string PostID, string UserID)
     {
       var comment = mapper.Map<Comment>(e);
       comment.PostID = PostID;
       comment.ParentCommentID = e.ParentCommentID == "" ? null : e.ParentCommentID;
       comment.CreatorID = UserID;
       await repo.CreateAsync(comment);
+      return mapper.Map<CommentViewDto>(comment);
+
     }
 
     public override IEnumerable<CommentViewDto> GetAll()

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuayThaiClub.EndPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d58fb9d561b7a48174c268e908067938e74ce75c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19f130a6e3a41c25b41680dc73c4af8c6b38d810")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuayThaiClub.EndPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuayThaiClub.EndPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,69 @@
 [
   {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
+    "Method": "ChangeProfilePicture",
+    "RelativePath": "Auth/ChangeProfilePicture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "MuayThaiClub.Model.Dtos.UserDto.AuthLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "Auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuayThaiClub.EndPoint.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "MuayThaiClub.Model.Dtos.UserDto.AuthRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MuayThaiClub.EndPoint.Controllers.CommentController",
     "Method": "Update",
     "RelativePath": "Comment",
@@ -67,13 +131,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MuayThaiClub.EndPoint.Controllers.CommentController",
@@ -191,69 +249,5 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
-    "Method": "ChangeProfilePicture",
-    "RelativePath": "User/ChangeProfilePicture",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "File",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "User/Login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "MuayThaiClub.Model.Dtos.UserDto.UserLoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
-    "Method": "GetCurrentUser",
-    "RelativePath": "User/me",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MuayThaiClub.EndPoint.Controllers.UserController",
-    "Method": "Register",
-    "RelativePath": "User/Register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "MuayThaiClub.Model.Dtos.UserDto.UserRegisterDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
   }
 ]

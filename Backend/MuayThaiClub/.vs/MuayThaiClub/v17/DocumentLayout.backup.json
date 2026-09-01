@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.model\\objects\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|solutionrelative:muaythaiclub.model\\objects\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.model\\dtos\\user\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|solutionrelative:muaythaiclub.model\\dtos\\user\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB65D82-0C39-4B99-9897-1DB6EAC4A6F2}|MuayThaiClub.Database\\MuayThaiClub.Database.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.database\\helpers\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EB65D82-0C39-4B99-9897-1DB6EAC4A6F2}|MuayThaiClub.Database\\MuayThaiClub.Database.csproj|solutionrelative:muaythaiclub.database\\helpers\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10DB4924-356E-494C-865B-63966D3DD6AE}|MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.endpoint\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10DB4924-356E-494C-865B-63966D3DD6AE}|MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj|solutionrelative:muaythaiclub.endpoint\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7937FA1-2067-44E0-A597-2306954D1C71}|MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.logic\\commentlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7937FA1-2067-44E0-A597-2306954D1C71}|MuayThaiClub.Logic\\MuayThaiClub.Logic.csproj|solutionrelative:muaythaiclub.logic\\commentlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10DB4924-356E-494C-865B-63966D3DD6AE}|MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.endpoint\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10DB4924-356E-494C-865B-63966D3DD6AE}|MuayThaiClub.EndPoint\\MuayThaiClub.EndPoint.csproj|solutionrelative:muaythaiclub.endpoint\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|solutionrelative:muaythaiclub.model\\dtos\\user\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.model\\objects\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|solutionrelative:muaythaiclub.model\\objects\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|c:\\users\\horva\\documents\\programozas\\projektek\\muaythaiclub\\backend\\muaythaiclub\\muaythaiclub.model\\objects\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E683961-A11C-4C8D-9E9A-61B265E6A5CE}|MuayThaiClub.Model\\MuayThaiClub.Model.csproj|solutionrelative:muaythaiclub.model\\objects\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -66,15 +82,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\Helpers\\AppUser.cs",
+              "RelativeDocumentMoniker": "MuayThaiClub.Database\\Helpers\\AppUser.cs",
+              "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\Helpers\\AppUser.cs",
+              "RelativeToolTip": "MuayThaiClub.Database\\Helpers\\AppUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T09:28:05.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserViewDto.cs",
+              "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserViewDto.cs",
+              "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\UserViewDto.cs",
+              "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserViewDto.cs",
+              "RelativeToolTip": "MuayThaiClub.Model\\Dtos\\User\\UserViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T09:25:58.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommentLogic.cs",
+              "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\CommentLogic.cs",
+              "RelativeDocumentMoniker": "MuayThaiClub.Logic\\CommentLogic.cs",
+              "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\CommentLogic.cs",
+              "RelativeToolTip": "MuayThaiClub.Logic\\CommentLogic.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAnwB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T09:19:36.455Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "MuayThaiClub.EndPoint\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "MuayThaiClub.EndPoint\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T09:19:22.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CrudBase.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\Helpers\\BaseClasses\\CrudBase.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Logic\\Helpers\\BaseClasses\\CrudBase.cs",
@@ -87,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "UserRegisterResultDto.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserRegisterResultDto.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\UserRegisterResultDto.cs",
@@ -100,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "GetCurrentUserDto.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\GetCurrentUserDto.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\GetCurrentUserDto.cs",
@@ -112,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "UserLoginResultDto.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserLoginResultDto.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\UserLoginResultDto.cs",
@@ -124,19 +192,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Objects\\Post.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Objects\\Post.cs",
               "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Objects\\Post.cs",
               "RelativeToolTip": "MuayThaiClub.Model\\Objects\\Post.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T09:39:02.819Z"
+              "WhenOpened": "2026-08-27T09:39:02.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Objects\\Comment.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Objects\\Comment.cs",
@@ -148,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "UserRegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserRegisterDto.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\UserRegisterDto.cs",
@@ -160,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Program.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.EndPoint\\Program.cs",
@@ -172,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\Helpers\\FileService.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Database\\Helpers\\FileService.cs",
@@ -184,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Database\\Helpers\\IFileService.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Database\\Helpers\\IFileService.cs",
@@ -196,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UserFileUploadDto.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Model\\Dtos\\User\\UserFileUploadDto.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Model\\Dtos\\User\\UserFileUploadDto.cs",
@@ -208,20 +277,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.EndPoint\\Controllers\\PostController.cs",
               "ToolTip": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Controllers\\PostController.cs",
               "RelativeToolTip": "MuayThaiClub.EndPoint\\Controllers\\PostController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAADwvyoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvyoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-23T09:04:39.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "UserLogic.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.Logic\\UserLogic.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.Logic\\UserLogic.cs",
@@ -233,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\horva\\Documents\\Programozas\\projektek\\MuayThaiClub\\Backend\\MuayThaiClub\\MuayThaiClub.EndPoint\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MuayThaiClub.EndPoint\\Controllers\\UserController.cs",

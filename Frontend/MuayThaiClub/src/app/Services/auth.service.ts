@@ -10,7 +10,7 @@ import { environment } from '../Environments/environment';
 })
 export class AuthService {
 
-  private apiUrl : string = environment.apiUrl + '/User/'
+  private apiUrl : string = environment.apiUrl + '/Auth/'
   constructor(private http : HttpClient) { }
 
   register(dto : UserRegisterDto)

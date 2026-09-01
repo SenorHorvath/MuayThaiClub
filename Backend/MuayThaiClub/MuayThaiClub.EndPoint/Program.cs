@@ -57,7 +57,7 @@ namespace MuayThaiClub.EndPoint
       });
 
       builder.Services.AddTransient(typeof(Repository<>));
-      builder.Services.AddTransient<UserLogic>();
+      builder.Services.AddTransient<AuthLogic>();
       builder.Services.AddTransient<DtoProvider>();
       builder.Services.AddTransient<PostLogic>();
       builder.Services.AddTransient<CommentLogic>();
