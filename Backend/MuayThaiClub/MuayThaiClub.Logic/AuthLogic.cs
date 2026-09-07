@@ -21,17 +21,15 @@ namespace MuayThaiClub.Logic
     private UserManager<AppUser> userManager;
     private RoleManager<IdentityRole> roleManager;
     private readonly IConfiguration configuration;
-    private readonly IFileService fileService;
     private IRepository<User> repo;
 
     public AuthLogic(UserManager<AppUser> userManager,
       RoleManager<IdentityRole> roleManager, IConfiguration configuration,
-      IFileService fileService, IRepository<User> repo)
+      IRepository<User> repo)
     {
       this.userManager = userManager;
       this.roleManager = roleManager;
       this.configuration = configuration;
-      this.fileService = fileService;
       this.repo = repo;
     }
 
